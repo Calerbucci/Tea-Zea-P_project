@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 	//google map custom marker icon - .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
 	var $marker_url = ( is_internetExplorer11 ) ? 'img/map-marker.png' : 'https://www.google.com/maps/place/No.+123,+Lane+648,+Minghu+Road,+East+District,+Hsinchu+City,+300/@24.7717313,120.9595116,17z/data=!3m1!4b1!4m5!3m4!1s0x34684a6d9dc76709:0x18a1a67baa852cd2!8m2!3d24.7717313!4d120.9617003';
-		3
+		
 	//define the basic color of your map, plus a value for saturation and brightness
 	var	$main_color = '#2d313f',
 		$saturation= -20,
