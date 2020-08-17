@@ -301,14 +301,15 @@ If you have any further questions about us or our services get in touch by sendi
           </div>            
         </div>
         
-        <form>
+        <form class="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+          action="https://script.google.com/macros/s/AKfycbz8-pHFiPHYToeaBHTEUCPDRZBRc_EoVLBAG3VR/exec">
           <div class="row">
             <!-- Contact form -->
             <div class="col-md-8">
               <div class="row">
                 <div class="col-md-6">
                   <label>Your Name</label>
-                  <input type="text" class="form-control" id="name" name="email" required data-error="Please enter your name">
+                  <input type="text" class="form-control" id="name" name="name" required data-error="Please enter your name">
                   <div class="help-block with-errors"></div>
                 </div>
                 <div class="col-md-6">
@@ -352,6 +353,14 @@ If you have any further questions about us or our services get in touch by sendi
               </div>
             </div>
           </div>
+
+           <div style="display:none;" class="thankyou_message">
+        <h2>
+            Thanks for contacting us!
+            We will get back to you soon!
+        </h2>
+    </div>
+
         </form>
       </div>
     </section>
@@ -396,7 +405,7 @@ If you have any further questions about us or our services get in touch by sendi
       </div>
     </footer>
     <!-- Footer Section End -->
-
+    
     <!-- Go to Top Link -->
     <a href="#" class="back-to-top">
       <i class="lni-chevron-up"></i>
@@ -427,6 +436,9 @@ If you have any further questions about us or our services get in touch by sendi
     <script src="assets/js/map.js"></script>
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM">
     </script>
+    <script data-cfasync="false" type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+    
       
   </body>
 </html>
