@@ -83,10 +83,7 @@
   .subscribe-form .form-inline .btn {
     width: 125px;
   }
-  .intro {
-  background: url(../img/img3.jpg) no-repeat center fixed;
-  background-size: cover;
-}
+  
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
